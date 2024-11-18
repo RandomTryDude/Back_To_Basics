@@ -8,7 +8,7 @@ The main goal of this project was to experiment with socket programming to trans
 
 After the transfer, the result can be viewed in the image below, showcasing the successful reception of the file:
 
-![Received Result](images/received.png)
+![Received Result](images/recieved.png)
 
 ## Appearance on Wireshark
 
@@ -43,7 +43,8 @@ To run this project:
 - Parse the whole system to exfiltrate different files.
 - change the buffer size to use malloc instead.
 - Add error checking ?
+- introduce a loop -> if server stop each time you send something ... well you'll restart it a lot
+- save files you recieved
 - other things
-
 
 

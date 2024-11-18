@@ -43,6 +43,8 @@ To run this project:
 - Parse the whole system to exfiltrate different files.
 - change the buffer size to use malloc instead.
 - Add error checking ?
+- introduce a loop -> if server stop each time you send something ... well you'll restart it a lot
+- save files you recieved
 - other things
 
 

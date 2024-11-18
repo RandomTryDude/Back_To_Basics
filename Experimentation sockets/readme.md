@@ -8,7 +8,7 @@ The main goal of this project was to experiment with socket programming to trans
 
 After the transfer, the result can be viewed in the image below, showcasing the successful reception of the file:
 
-![Received Result](images/received.png)
+![Received Result](images/recieved.png)
 
 ## Appearance on Wireshark
 

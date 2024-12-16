@@ -12,8 +12,20 @@ The purpose of this repository is to:
 
 ## Assignments
 
-The `C` folder will contain the bulk of my C code for the assignments, which range from basic concepts like pointers and memory management to more advanced topics that are crucial in the world of reverse engineering.
+The `Hombre_Assignment` folder will contain the bulk of my C code for the assignments, which range from basic concepts like pointers and memory management to more advanced topics that are crucial in the world of reverse engineering.
 
 ## Acknowledgements
 
 Thanks to [h0mbre](https://github.com/h0mbre) for the Learning-C repository.
+
+<--- In Random_Codes you can find: 
+
+a bank system (Bank_System.c) 
+-> include deposit / withdraw / payement / login / register / logoff
+-> will generate a list of random clients
+
+a hangman game (hangman.c) 
+-> solo player game 
+-> 100 differents animal to guess from ( choosed using rand() ) 
+-> display already tried letter ( but you can try them again) 
+-> lowercase everychar to avoid letter with MAJ not matching
